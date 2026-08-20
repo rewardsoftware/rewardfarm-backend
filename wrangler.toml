@@ -1,0 +1,19 @@
+name = "faucetpay-withdraw-backend"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Non-secret config (edit these)
+[vars]
+WITHDRAW_LIMIT_HOURS = "12"
+FAUCETPAY_CURRENCY = "USDT"
+
+# D1 database binding — create the DB first (see README), then paste its
+# database_id below, or let `wrangler d1 create` add this block for you.
+[[d1_databases]]
+binding = "DB"
+database_name = "rewardsoftware-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Secrets (do NOT put these here — set via dashboard or `wrangler secret put`):
+#   FAUCETPAY_API_KEY
+#   TELEGRAM_BOT_TOKEN
