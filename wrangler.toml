@@ -12,7 +12,7 @@ FAUCETPAY_CURRENCY = "USDT"
 [[d1_databases]]
 binding = "DB"
 database_name = "rewardsoftware-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "4f4524bc-8e45-4833-97ff-21f24bb398f8"
 
 # Secrets (do NOT put these here — set via dashboard or `wrangler secret put`):
 #   FAUCETPAY_API_KEY
